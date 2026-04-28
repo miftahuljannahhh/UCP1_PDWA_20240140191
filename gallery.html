@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multimedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Tech Community</a>
+        <div>
+          <a href="./form.html" class="btn btn-outline-light btn-sm me-2">Form Anggota</a>
+          <a href="./gallery.html" class="btn btn-outline-light btn-sm">Multimedia</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h2>Halaman Multimedia</h2>
+      <p>Halaman ini menampilkan konten gambar, video, dan audio.</p>
+
+      <hr>
+
+      <h5>Gambar</h5>
+      <!-- Ganti nama file gambar sesuai file di laptop kamu -->
+      <img id="gambar" src="gambar1.jpg" class="img-fluid mb-2" alt="Gambar Tech">
+      <br>
+      <button class="btn btn-dark btn-sm mb-4" onclick="gantiGambar()">Ganti Gambar</button>
+
+      <hr>
+
+      <h5>Video</h5>
+      <!-- Ganti nama file video sesuai file di laptop kamu -->
+      <video controls class="mb-4">
+        <source src="video.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+
+      <hr>
+
+      <h5>Audio</h5>
+      <img src="thumbnail.jpg" style="width: 200px; margin-bottom: 10px;" alt="Thumbnail Audio">
+      <br>
+      <audio id="audio" src="audio.mp3"></audio>
+      <button class="btn btn-success btn-sm me-2" onclick="document.getElementById('audio').play()">Play</button>
+      <button class="btn btn-danger btn-sm" onclick="document.getElementById('audio').pause()">Pause</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

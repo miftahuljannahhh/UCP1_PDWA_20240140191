@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Anggota</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-primary bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Tech Community</a>
+        <div>
+          <a href="./form.html" class="btn btn-outline-light btn-sm me-2">Form Anggota</a>
+          <a href="./gallery.html" class="btn btn-outline-light btn-sm">Multimedia</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h2>Form Pendaftaran Anggota</h2>
+      <p>Isi form di bawah untuk mendaftar sebagai anggota baru.</p>
+
+      <hr>
+
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+      </div>
+
+      <div class="mb-3">
+        <label for="minat" class="form-label">Bidang Minat</label>
+        <select class="form-select" id="minat">
+          <option value="">-- Pilih Bidang --</option>
+          <option>Mobile Development</option>
+          <option>Data Science</option>
+          <option>Cybersecurity</option>
+          <option>UI/UX Design</option>
+        </select>
+      </div>
+
+      <button class="btn btn-dark" onclick="submitForm()">Submit</button>
+      <a href="./index.html" class="btn btn-secondary ms-2">Kembali</a>
+
+      <div id="hasilInput" class="alert alert-success mt-3" style="display:none;"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
